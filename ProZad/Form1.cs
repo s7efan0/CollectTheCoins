@@ -24,35 +24,12 @@ namespace ProZad
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
-            {
-                player.movingLeft= true;
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                player.movingRight = true;
-            }
-            if (e.KeyCode == Keys.Up && !player.playerMidAir)
-            {
-                player.force = 20;
-            }
+            player.startMoving(e);
         }
 
         private void tMove_Tick(object sender, EventArgs e)
         {
-            if (player.movingLeft)
-            {
-                pbPlayer.Left -= player.playerSpeed;
-            }
-            if (player.movingRight)
-            {
-                pbPlayer.Left += player.playerSpeed;
-            }
-            if (pbPlayer.Top > 650)
-            {
-                pbPlayer.Top = 315;
-                pbPlayer.Left = 178;
-            }
+            player.move();
         }
 
         private void tGravity_Tick(object sender, EventArgs e)
@@ -62,14 +39,12 @@ namespace ProZad
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Left)
-            {
-                player.movingLeft = false;
-            }
-            if (e.KeyCode == Keys.Right)
-            {
-                player.movingRight = false;
-            }
+            player.stopMoving(e);
+        }
+
+        private void tAnimator_Tick(object sender, EventArgs e)
+        {
+            player.playAnimation();
         }
     }
 }

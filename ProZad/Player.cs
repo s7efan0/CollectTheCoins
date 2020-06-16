@@ -10,19 +10,26 @@ namespace ProZad
     class Player
     {
         public PictureBox pictureBox;
-        public bool movingLeft, movingRight, playerMidAir;
-        public int playerSpeed, gravity, force;
+        private bool movingLeft, movingRight, playerMidAir;
+        private const int playerSpeed = 5, gravity = 5;
+        private int force = 0;
         List<PictureBox> groundPictureBoxes;
+
+        AnimationIdle animationIdle;
+        AnimationRun animationRun;
+        IAnimator currentAnimation;
+
+
 
         public Player(PictureBox pb, IEnumerable<PictureBox> groundsEnumerable)
         {
             this.pictureBox = pb;
             movingLeft = movingRight = false;
             playerMidAir = true;
-            playerSpeed = 5;
-            gravity = 5;
-            force = 0;
             setGroundPictureBoxes(groundsEnumerable);
+            animationIdle = new AnimationIdle(pb);
+            animationRun = new AnimationRun(pb);
+            currentAnimation = animationIdle;
         }
 
         private void setGroundPictureBoxes(IEnumerable<PictureBox> groundsEnumerable)
@@ -37,6 +44,55 @@ namespace ProZad
             }
         }
 
+        public void startMoving(KeyEventArgs e)
+        {
+            currentAnimation = animationRun;
+            if (e.KeyCode == Keys.Left)
+            {
+                this.movingLeft = true;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                this.movingRight = true;
+            }
+            if (e.KeyCode == Keys.Up && !this.playerMidAir)
+            {
+                this.force = 20;
+            }
+        }
+
+        public void move()
+        {
+            if (this.movingLeft)
+            {
+                pictureBox.Left -= Player.playerSpeed;
+            }
+            if (this.movingRight)
+            {
+                pictureBox.Left += Player.playerSpeed;
+            }
+            if (pictureBox.Top > 650)
+            {
+                //Reload level
+                pictureBox.Top = 315;
+                pictureBox.Left = 178;
+            }
+        }
+
+        public void stopMoving(KeyEventArgs e)
+        {
+            currentAnimation = animationIdle;
+            currentAnimation.reload();
+            if (e.KeyCode == Keys.Left)
+            {
+                this.movingLeft = false;
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                this.movingRight = false;
+            }
+        }
+
         public void gravityPull()
         {
             playerMidAir = isPlayerMidAir();
@@ -45,12 +101,12 @@ namespace ProZad
             {
                 if (force <= 0)
                 { 
-                    pictureBox.Image = ProZad.Properties.Resources.cf;
+                    //pictureBox.Image = ProZad.Properties.Resources.cf;
                     pictureBox.Top += gravity;
                 }
                 else
                 {
-                    pictureBox.Image = ProZad.Properties.Resources.cj;
+                    //pictureBox.Image = ProZad.Properties.Resources.cj;
                     force -= 1;
                     pictureBox.Top -= gravity;
                 }
@@ -59,12 +115,12 @@ namespace ProZad
             {
                 if (force > 0)
                 {
-                    pictureBox.Image = ProZad.Properties.Resources.cj;
+                    //pictureBox.Image = ProZad.Properties.Resources.cj;
                     pictureBox.Top -= gravity;
                 }
                 else
                 { 
-                    pictureBox.Image = ProZad.Properties.Resources.c2;
+                    //pictureBox.Image = ProZad.Properties.Resources.c2;
                 }
             }
         }
@@ -79,6 +135,11 @@ namespace ProZad
                 }
             }
             return true;
+        }
+
+        public void playAnimation()
+        {
+            currentAnimation.Animate();
         }
     }
 }

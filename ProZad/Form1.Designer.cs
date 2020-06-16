@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tGravity = new System.Windows.Forms.Timer(this.components);
             this.tMove = new System.Windows.Forms.Timer(this.components);
+            this.tAnimator = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.pbGround = new System.Windows.Forms.PictureBox();
             this.pbGround2 = new System.Windows.Forms.PictureBox();
             this.pbPlayer = new System.Windows.Forms.PictureBox();
@@ -50,6 +52,21 @@
             this.tMove.Enabled = true;
             this.tMove.Interval = 10;
             this.tMove.Tick += new System.EventHandler(this.tMove_Tick);
+            // 
+            // tAnimator
+            // 
+            this.tAnimator.Enabled = true;
+            this.tAnimator.Interval = 40;
+            this.tAnimator.Tick += new System.EventHandler(this.tAnimator_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "label1";
             // 
             // pbGround
             // 
@@ -74,10 +91,11 @@
             // pbPlayer
             // 
             this.pbPlayer.BackColor = System.Drawing.Color.Transparent;
-            this.pbPlayer.Image = global::ProZad.Properties.Resources.c2;
+            this.pbPlayer.Image = global::ProZad.Properties.Resources.characterIdle1R;
             this.pbPlayer.Location = new System.Drawing.Point(178, 315);
             this.pbPlayer.Name = "pbPlayer";
-            this.pbPlayer.Size = new System.Drawing.Size(87, 89);
+            this.pbPlayer.Size = new System.Drawing.Size(108, 81);
+            this.pbPlayer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPlayer.TabIndex = 1;
             this.pbPlayer.TabStop = false;
             // 
@@ -87,6 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1384, 661);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbGround);
             this.Controls.Add(this.pbGround2);
             this.Controls.Add(this.pbPlayer);
@@ -99,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGround2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +129,8 @@
         private System.Windows.Forms.Timer tGravity;
         private System.Windows.Forms.PictureBox pbGround2;
         private System.Windows.Forms.Timer tMove;
+        private System.Windows.Forms.Timer tAnimator;
+        private System.Windows.Forms.Label label1;
     }
 }
 

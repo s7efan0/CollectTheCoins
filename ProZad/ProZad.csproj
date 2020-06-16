@@ -46,12 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimationIdle.cs" />
+    <Compile Include="AnimationRun.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IAnimator.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,6 +101,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle1R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle2R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle3R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle4R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle5R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle6R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle7R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle8R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle9R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle10R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle11R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun1R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun2R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun3R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun4R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun5R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun6R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun7R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun8R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun9R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun10R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun11R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun12R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun13R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun14R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun15R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun16R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun17R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun18R.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
