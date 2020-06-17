@@ -46,8 +46,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnimationIdle.cs" />
-    <Compile Include="AnimationRun.cs" />
+    <Compile Include="AnimationIdleLeft.cs" />
+    <Compile Include="AnimationIdleRight.cs" />
+    <Compile Include="AnimationJumpDownLeft.cs" />
+    <Compile Include="AnimationJumpDownRight.cs" />
+    <Compile Include="AnimationJumpUpLeft.cs" />
+    <Compile Include="AnimationJumpUpRight.cs" />
+    <Compile Include="AnimationRunLeft.cs" />
+    <Compile Include="AnimationRunRight.cs" />
+    <Compile Include="CoinManager.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +195,156 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\characterRun18R.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterJumpDownR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterJumpUpR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterJumpDownL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterJumpUpL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun5L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun6L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun7L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun8L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun9L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun10L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun11L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun12L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun13L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun14L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun15L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun16L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun17L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterRun18L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle1L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle2L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle3L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle4L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle5L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle6R1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle7L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle8L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle9L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle10L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle11L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\characterIdle6L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

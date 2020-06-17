@@ -118,38 +118,191 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="characterIdle11R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterIdle11R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun5R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun5R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun8L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun8L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterIdle3R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterIdle3R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun7R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun7R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle4L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle4L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun11R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun11R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterJumpDownL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterJumpDownL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun17R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun17R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun16R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun16R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="characterIdle7R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle7R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NewBackgraound 1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NewBackgraound 1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun6L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun6L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle11R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle11R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterJumpDownR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterJumpDownR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun15R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun15R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle6L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle6L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun14L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun14L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun10R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun10R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun15L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun15L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun13R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun13R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle3L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle3L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun11L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun11L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun9L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun9L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle7L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle7L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="characterIdle10R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle10R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Grass5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Grass5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="characterIdle8R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle8R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Grass5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Grass5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun14R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun14R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun16L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun16L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun12L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun12L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun1L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun1L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun18L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun18L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle10L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle10L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle11L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle11L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle2R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle2R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun5L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun5L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun8R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun8R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle6R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle6R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="characterIdle4R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle4R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="characterIdle6R1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle6R1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle9L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle9L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun18R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun18R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun3L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun3L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun9R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun9R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterJumpUpR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterJumpUpR.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun2R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun2R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterJumpUpL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterJumpUpL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun4R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun4R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle2L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle2L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle1L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle1L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun6R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun6R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun12R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun12R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle5L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle5L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="characterIdle9R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle9R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterIdle6R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterIdle6R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun1R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun1R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun13L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun13L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun3R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun3R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle3R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle3R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun4L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun4L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun10L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun10L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun7L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun7L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterIdle1R" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle1R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="characterIdle5R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\characterIdle5R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,70 +310,67 @@
   <data name="cj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterIdle2R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterIdle2R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterIdle8L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterIdle8L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="c2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NewBackgraound 1920x1080" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewBackgraound 1920x1080.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterIdle1R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterIdle1R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="characterRun17L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun17L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="characterRun2L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\characterRun2L.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="c" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun1R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun1R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun2R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun2R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun3R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun3R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun4R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun4R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun5R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun5R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun6R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun6R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun7R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun7R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun8R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun8R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun9R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun9R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun10R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun10R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun11R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun11R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun12R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun12R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun13R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun13R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun14R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun14R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun15R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun15R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="characterRun16R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun16R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="characterRun17R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun17R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="characterRun18R" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\characterRun18R.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image 16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image 16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

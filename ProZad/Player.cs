@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,21 +16,40 @@ namespace ProZad
         private int force = 0;
         List<PictureBox> groundPictureBoxes;
 
-        AnimationIdle animationIdle;
-        AnimationRun animationRun;
-        IAnimator currentAnimation;
+        public AnimationIdleRight animationIdleRight;
+        public AnimationRunRight animationRunRight;
+        public AnimationJumpDownRight animationJumpDownRight;
+        public AnimationJumpUpRight animationJumpUpRight;
 
+        public AnimationIdleLeft animationIdleLeft;
+        public AnimationRunLeft animationRunLeft;
+        public AnimationJumpDownLeft animationJumpDownLeft;
+        public AnimationJumpUpLeft animationJumpUpLeft;
+        public IAnimator currentAnimation;
 
+        public String orientation = "Right";
 
-        public Player(PictureBox pb, IEnumerable<PictureBox> groundsEnumerable)
+        public Player(PictureBox pb, IEnumerable<PictureBox> allPictureBoxes)
         {
             this.pictureBox = pb;
             movingLeft = movingRight = false;
             playerMidAir = true;
-            setGroundPictureBoxes(groundsEnumerable);
-            animationIdle = new AnimationIdle(pb);
-            animationRun = new AnimationRun(pb);
-            currentAnimation = animationIdle;
+            setAnimations();
+            setGroundPictureBoxes(allPictureBoxes);
+        }
+
+        private void setAnimations()
+        {
+            this.animationIdleRight = new AnimationIdleRight(this);
+            this.animationRunRight = new AnimationRunRight(this);
+            this.animationJumpDownRight = new AnimationJumpDownRight(this);
+            this.animationJumpUpRight = new AnimationJumpUpRight(this);
+
+            this.animationIdleLeft = new AnimationIdleLeft(this);
+            this.animationRunLeft = new AnimationRunLeft(this);
+            this.animationJumpDownLeft = new AnimationJumpDownLeft(this);
+            this.animationJumpUpLeft = new AnimationJumpUpLeft(this);
+            currentAnimation = animationJumpDownRight;
         }
 
         private void setGroundPictureBoxes(IEnumerable<PictureBox> groundsEnumerable)
@@ -46,14 +66,17 @@ namespace ProZad
 
         public void startMoving(KeyEventArgs e)
         {
-            currentAnimation = animationRun;
-            if (e.KeyCode == Keys.Left)
+            if (e.KeyCode == Keys.Left && !movingRight)
             {
+                this.orientation = "Left";
+                currentAnimation.lookLeft();
                 this.movingLeft = true;
             }
-            if (e.KeyCode == Keys.Right)
+            if (e.KeyCode == Keys.Right && !movingLeft)
             {
-                this.movingRight = true;
+                this.orientation = "Right";
+                currentAnimation.lookRight();
+                this.movingRight = true; 
             }
             if (e.KeyCode == Keys.Up && !this.playerMidAir)
             {
@@ -71,18 +94,18 @@ namespace ProZad
             {
                 pictureBox.Left += Player.playerSpeed;
             }
-            if (pictureBox.Top > 650)
-            {
-                //Reload level
-                pictureBox.Top = 315;
-                pictureBox.Left = 178;
-            }
+        }
+
+        public void reloadPlayer()
+        {
+            //Reload level
+            pictureBox.Top = 315;
+            pictureBox.Left = 178;
         }
 
         public void stopMoving(KeyEventArgs e)
         {
-            currentAnimation = animationIdle;
-            currentAnimation.reload();
+            playerMidAir = !isPlayerOnGround();
             if (e.KeyCode == Keys.Left)
             {
                 this.movingLeft = false;
@@ -95,18 +118,15 @@ namespace ProZad
 
         public void gravityPull()
         {
-            playerMidAir = isPlayerMidAir();
-
+            playerMidAir = !isPlayerOnGround();
             if (playerMidAir)
             {
                 if (force <= 0)
-                { 
-                    //pictureBox.Image = ProZad.Properties.Resources.cf;
+                {
                     pictureBox.Top += gravity;
                 }
                 else
                 {
-                    //pictureBox.Image = ProZad.Properties.Resources.cj;
                     force -= 1;
                     pictureBox.Top -= gravity;
                 }
@@ -115,31 +135,72 @@ namespace ProZad
             {
                 if (force > 0)
                 {
-                    //pictureBox.Image = ProZad.Properties.Resources.cj;
                     pictureBox.Top -= gravity;
-                }
-                else
-                { 
-                    //pictureBox.Image = ProZad.Properties.Resources.c2;
                 }
             }
         }
 
-        private bool isPlayerMidAir()
+        private void animationStateChange()
+        {
+            if (playerMidAir)
+            {
+                if (force <= 0)
+                {
+                    currentAnimation.jumpDown();
+                }
+                else
+                {
+                    currentAnimation.jumpUp();
+                }
+            }
+            else
+            {
+                if (force <= 0)
+                {
+                    if (movingLeft || movingRight)
+                    {
+                        currentAnimation.startRunning();
+                    }
+                    else
+                    {
+                        currentAnimation.Idle();
+                    }
+                }
+                else
+                {
+                    currentAnimation.jumpUp();
+                }
+            }
+        }
+
+        private bool isPlayerColladingWithGround() // todo add collading with obstacles
         {
             foreach (PictureBox pb in groundPictureBoxes)
             {
                 if (pictureBox.Bounds.IntersectsWith(pb.Bounds))
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
+        }
+
+        private bool isPlayerOnGround()
+        {
+            foreach (PictureBox pb in groundPictureBoxes)
+            {
+                if (pictureBox.Bounds.IntersectsWith(pb.Bounds) && (pictureBox.Location.Y + pictureBox.Height) <= pb.Location.Y + 5)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         public void playAnimation()
         {
-            currentAnimation.Animate();
+            animationStateChange();
+            currentAnimation.animate();
         }
     }
 }

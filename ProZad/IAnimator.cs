@@ -8,8 +8,20 @@ namespace ProZad
 {
     interface IAnimator
     {
-        void Animate();
+        void animate();
 
         void reload();
+
+        void startRunning();
+
+        void Idle();
+
+        void jumpUp();
+
+        void jumpDown();
+
+        void lookLeft();
+
+        void lookRight();
     }
 }
