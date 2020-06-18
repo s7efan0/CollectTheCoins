@@ -14,12 +14,16 @@ namespace ProZad
     {
         Player player;
         CoinManager coinManager;
+        MovingObstacles movingObstacles;
+        StationaryObstacles stationaryObstacles;
 
         public Form1()
         {
             InitializeComponent();
             player = new Player(pbPlayer, Controls.OfType<PictureBox>());
             coinManager = new CoinManager(pbPlayer, label2, Controls.OfType<PictureBox>());
+            movingObstacles = new MovingObstacles(pbPlayer, Controls.OfType<PictureBox>());
+            stationaryObstacles = new StationaryObstacles(pbPlayer, Controls.OfType<PictureBox>());
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -35,7 +39,7 @@ namespace ProZad
         {
             player.move();
             coinManager.checkCoinCollision();
-            if (pbPlayer.Top > 650)
+            if (pbPlayer.Top > 650 || movingObstacles.collidesWithPlayer() || stationaryObstacles.collidesWithPlayer())
             {
                 reloadLevel();
             }
@@ -55,12 +59,13 @@ namespace ProZad
         {
             coinManager.PlayAnimations();
             player.playAnimation();
+            movingObstacles.moveObstacles();
         }
 
         public void reloadLevel()
         {
             coinManager.resetCoins();
-            player.reloadPlayer();
+            player.reloadPlayer();   
         }
     }
 }

@@ -99,8 +99,8 @@ namespace ProZad
         public void reloadPlayer()
         {
             //Reload level
-            pictureBox.Top = 315;
-            pictureBox.Left = 178;
+            pictureBox.Top = 420;
+            pictureBox.Left = 55;
         }
 
         public void stopMoving(KeyEventArgs e)

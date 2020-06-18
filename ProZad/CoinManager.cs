@@ -117,5 +117,10 @@ namespace ProZad
             coinsCollected = 0;
             score.Text = coinsCollected.ToString() + "/" + maxCoins.ToString();
         }
+
+        public bool allCoinsCollected()
+        {
+            return coinsCollected == maxCoins;
+        }
     }
 }
