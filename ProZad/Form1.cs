@@ -12,60 +12,37 @@ namespace ProZad
 {
     public partial class Form1 : Form
     {
-        Player player;
-        CoinManager coinManager;
-        MovingObstacles movingObstacles;
-        StationaryObstacles stationaryObstacles;
+        LevelManager lvlManager;
 
-        public Form1()
+        public Form1(MainMenu f2)
         {
             InitializeComponent();
-            player = new Player(pbPlayer, Controls.OfType<PictureBox>());
-            coinManager = new CoinManager(pbPlayer, label2, Controls.OfType<PictureBox>());
-            movingObstacles = new MovingObstacles(pbPlayer, Controls.OfType<PictureBox>());
-            stationaryObstacles = new StationaryObstacles(pbPlayer, Controls.OfType<PictureBox>());
+            lvlManager = new LevelManager(f2, this, pbPlayer, label2, Controls.OfType<PictureBox>(), Controls.OfType<Timer>());
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            player.startMoving(e);
-            if (e.KeyCode == Keys.R)
-            {
-                reloadLevel();
-            }
+            lvlManager.keyDown(e);
         }
 
         private void tMove_Tick(object sender, EventArgs e)
         {
-            player.move();
-            coinManager.checkCoinCollision();
-            if (pbPlayer.Top > 650 || movingObstacles.collidesWithPlayer() || stationaryObstacles.collidesWithPlayer())
-            {
-                reloadLevel();
-            }
+            lvlManager.moveTick();
         }
 
         private void tGravity_Tick(object sender, EventArgs e)
         {
-            player.gravityPull();
+            lvlManager.gravityTick();
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            player.stopMoving(e);
+            lvlManager.keyUp(e);
         }
 
         private void tAnimator_Tick(object sender, EventArgs e)
         {
-            coinManager.PlayAnimations();
-            player.playAnimation();
-            movingObstacles.moveObstacles();
-        }
-
-        public void reloadLevel()
-        {
-            coinManager.resetCoins();
-            player.reloadPlayer();   
+            lvlManager.animatorTick();
         }
     }
 }

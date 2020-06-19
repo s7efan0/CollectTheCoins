@@ -29,9 +29,13 @@ namespace ProZad
 
         public String orientation = "Right";
 
+        int startLeft, startTop;
+
         public Player(PictureBox pb, IEnumerable<PictureBox> allPictureBoxes)
         {
             this.pictureBox = pb;
+            startLeft = pb.Left;
+            startTop = pb.Top;
             movingLeft = movingRight = false;
             playerMidAir = true;
             setAnimations();
@@ -98,9 +102,10 @@ namespace ProZad
 
         public void reloadPlayer()
         {
-            //Reload level
-            pictureBox.Top = 420;
-            pictureBox.Left = 55;
+            pictureBox.Top = startTop;
+            pictureBox.Left = startLeft;
+            movingLeft = movingRight = false;
+            force = 0;
         }
 
         public void stopMoving(KeyEventArgs e)
@@ -171,18 +176,6 @@ namespace ProZad
                     currentAnimation.jumpUp();
                 }
             }
-        }
-
-        private bool isPlayerColladingWithGround() // todo add collading with obstacles
-        {
-            foreach (PictureBox pb in groundPictureBoxes)
-            {
-                if (pictureBox.Bounds.IntersectsWith(pb.Bounds))
-                {
-                    return true;
-                }
-            }
-            return false;
         }
 
         private bool isPlayerOnGround()

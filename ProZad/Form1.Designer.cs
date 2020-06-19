@@ -32,8 +32,16 @@
             this.tGravity = new System.Windows.Forms.Timer(this.components);
             this.tMove = new System.Windows.Forms.Timer(this.components);
             this.tAnimator = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            this.pictureBox27 = new System.Windows.Forms.PictureBox();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -49,15 +57,16 @@
             this.pbGround = new System.Windows.Forms.PictureBox();
             this.pbGround2 = new System.Windows.Forms.PictureBox();
             this.pbPlayer = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
-            this.pictureBox27 = new System.Windows.Forms.PictureBox();
-            this.pictureBox30 = new System.Windows.Forms.PictureBox();
-            this.pictureBox33 = new System.Windows.Forms.PictureBox();
-            this.pictureBox34 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -73,15 +82,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGround)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGround2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tGravity
@@ -102,27 +102,118 @@
             this.tAnimator.Interval = 40;
             this.tAnimator.Tick += new System.EventHandler(this.tAnimator_Tick);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ink Free", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 26);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Press \"R\" to reload level";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Ink Free", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(293, 9);
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(22, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 26);
             this.label2.TabIndex = 4;
             this.label2.Text = "Coins";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = global::ProZad.Properties.Resources.image_1;
+            this.pictureBox6.Location = new System.Drawing.Point(319, 129);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 45;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Tag = "coin";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::ProZad.Properties.Resources.image_1;
+            this.pictureBox1.Location = new System.Drawing.Point(1219, 264);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "coin";
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox34.Image = global::ProZad.Properties.Resources.Spike_Up;
+            this.pictureBox34.Location = new System.Drawing.Point(1037, 481);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox34.TabIndex = 43;
+            this.pictureBox34.TabStop = false;
+            this.pictureBox34.Tag = "stationaryObs";
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox33.Image = global::ProZad.Properties.Resources.Spike_Up;
+            this.pictureBox33.Location = new System.Drawing.Point(884, 178);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox33.TabIndex = 40;
+            this.pictureBox33.TabStop = false;
+            this.pictureBox33.Tag = "stationaryObs";
+            // 
+            // pictureBox30
+            // 
+            this.pictureBox30.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
+            this.pictureBox30.Location = new System.Drawing.Point(455, 206);
+            this.pictureBox30.Name = "pictureBox30";
+            this.pictureBox30.Size = new System.Drawing.Size(579, 65);
+            this.pictureBox30.TabIndex = 37;
+            this.pictureBox30.TabStop = false;
+            this.pictureBox30.Tag = "ground";
+            // 
+            // pictureBox25
+            // 
+            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox25.Image = global::ProZad.Properties.Resources.image_1;
+            this.pictureBox25.Location = new System.Drawing.Point(767, 140);
+            this.pictureBox25.Name = "pictureBox25";
+            this.pictureBox25.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox25.TabIndex = 31;
+            this.pictureBox25.TabStop = false;
+            this.pictureBox25.Tag = "coin";
+            // 
+            // pictureBox27
+            // 
+            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox27.Image = global::ProZad.Properties.Resources.image_1;
+            this.pictureBox27.Location = new System.Drawing.Point(1103, 192);
+            this.pictureBox27.Name = "pictureBox27";
+            this.pictureBox27.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox27.TabIndex = 29;
+            this.pictureBox27.TabStop = false;
+            this.pictureBox27.Tag = "coin";
+            // 
+            // pictureBox17
+            // 
+            this.pictureBox17.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
+            this.pictureBox17.Location = new System.Drawing.Point(1096, 279);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(66, 35);
+            this.pictureBox17.TabIndex = 25;
+            this.pictureBox17.TabStop = false;
+            this.pictureBox17.Tag = "ground";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
+            this.pictureBox12.Location = new System.Drawing.Point(1211, 347);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(66, 35);
+            this.pictureBox12.TabIndex = 23;
+            this.pictureBox12.TabStop = false;
+            this.pictureBox12.Tag = "ground";
             // 
             // pictureBox15
             // 
@@ -293,107 +384,16 @@
             this.pbPlayer.TabIndex = 1;
             this.pbPlayer.TabStop = false;
             // 
-            // pictureBox12
+            // label1
             // 
-            this.pictureBox12.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
-            this.pictureBox12.Location = new System.Drawing.Point(1211, 347);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(66, 35);
-            this.pictureBox12.TabIndex = 23;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "ground";
-            // 
-            // pictureBox17
-            // 
-            this.pictureBox17.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
-            this.pictureBox17.Location = new System.Drawing.Point(1096, 279);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(66, 35);
-            this.pictureBox17.TabIndex = 25;
-            this.pictureBox17.TabStop = false;
-            this.pictureBox17.Tag = "ground";
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox25.Image = global::ProZad.Properties.Resources.image_1;
-            this.pictureBox25.Location = new System.Drawing.Point(767, 140);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox25.TabIndex = 31;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "coin";
-            // 
-            // pictureBox27
-            // 
-            this.pictureBox27.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox27.Image = global::ProZad.Properties.Resources.image_1;
-            this.pictureBox27.Location = new System.Drawing.Point(1103, 192);
-            this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox27.TabIndex = 29;
-            this.pictureBox27.TabStop = false;
-            this.pictureBox27.Tag = "coin";
-            // 
-            // pictureBox30
-            // 
-            this.pictureBox30.BackgroundImage = global::ProZad.Properties.Resources.Grass5;
-            this.pictureBox30.Location = new System.Drawing.Point(455, 206);
-            this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(579, 65);
-            this.pictureBox30.TabIndex = 37;
-            this.pictureBox30.TabStop = false;
-            this.pictureBox30.Tag = "ground";
-            // 
-            // pictureBox33
-            // 
-            this.pictureBox33.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox33.Image = global::ProZad.Properties.Resources.Spike_Up;
-            this.pictureBox33.Location = new System.Drawing.Point(884, 178);
-            this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox33.TabIndex = 40;
-            this.pictureBox33.TabStop = false;
-            this.pictureBox33.Tag = "stationaryObs";
-            // 
-            // pictureBox34
-            // 
-            this.pictureBox34.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox34.Image = global::ProZad.Properties.Resources.Spike_Up;
-            this.pictureBox34.Location = new System.Drawing.Point(1037, 481);
-            this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox34.TabIndex = 43;
-            this.pictureBox34.TabStop = false;
-            this.pictureBox34.Tag = "stationaryObs";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::ProZad.Properties.Resources.image_1;
-            this.pictureBox1.Location = new System.Drawing.Point(1219, 264);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "coin";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::ProZad.Properties.Resources.image_1;
-            this.pictureBox6.Location = new System.Drawing.Point(276, 460);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 48);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 45;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "coin";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Ink Free", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DimGray;
+            this.label1.Location = new System.Drawing.Point(22, 318);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(441, 26);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "avoid obstacles they reset you to the start";
             // 
             // Form1
             // 
@@ -401,6 +401,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(1384, 661);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox34);
@@ -423,15 +424,23 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pbCoin);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.pbGround);
             this.Controls.Add(this.pbGround2);
             this.Controls.Add(this.pbPlayer);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -447,15 +456,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbGround)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGround2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlayer)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox27)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,7 +469,6 @@
         private System.Windows.Forms.PictureBox pbGround2;
         private System.Windows.Forms.Timer tMove;
         private System.Windows.Forms.Timer tAnimator;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pbCoin;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -492,6 +491,7 @@
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label1;
     }
 }
 
