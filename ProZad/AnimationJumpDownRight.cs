@@ -23,7 +23,7 @@ namespace ProZad
             player.pictureBox.Image = imageJumpDown;
         }
 
-        public virtual void Idle()
+        public virtual void idle()
         {
             player.currentAnimation = player.animationIdleRight;
         }

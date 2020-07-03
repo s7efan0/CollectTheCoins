@@ -36,7 +36,7 @@ namespace ProZad
             listsOfImages.AddLast(Properties.Resources.characterRun18L);
         }
 
-        public override void Idle()
+        public override void idle()
         {
             player.currentAnimation = player.animationIdleLeft;
         }

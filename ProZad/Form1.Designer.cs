@@ -400,6 +400,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1384, 661);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox6);
@@ -427,6 +428,7 @@
             this.Controls.Add(this.pbGround);
             this.Controls.Add(this.pbGround2);
             this.Controls.Add(this.pbPlayer);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";

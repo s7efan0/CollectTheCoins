@@ -53,7 +53,7 @@ namespace ProZad
             }
         }
 
-        public void Idle()
+        public void idle()
         {
            
         }

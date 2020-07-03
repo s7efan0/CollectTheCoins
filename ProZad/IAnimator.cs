@@ -14,7 +14,7 @@ namespace ProZad
 
         void startRunning();
 
-        void Idle();
+        void idle();
 
         void jumpUp();
 

@@ -13,7 +13,7 @@ namespace ProZad
             imageJumpUp = Properties.Resources.characterJumpUpL;
         }
 
-        public override void Idle()
+        public override void idle()
         {
             player.currentAnimation = player.animationIdleLeft;
         }

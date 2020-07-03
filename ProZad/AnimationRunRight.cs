@@ -57,7 +57,7 @@ namespace ProZad
             }
         }
 
-        public virtual void Idle()
+        public virtual void idle()
         {
             player.currentAnimation = player.animationIdleRight;
         }

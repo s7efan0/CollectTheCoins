@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProZad
@@ -26,8 +22,6 @@ namespace ProZad
         public AnimationJumpDownLeft animationJumpDownLeft;
         public AnimationJumpUpLeft animationJumpUpLeft;
         public IAnimator currentAnimation;
-
-        public String orientation = "Right";
 
         int startLeft, startTop;
 
@@ -72,13 +66,11 @@ namespace ProZad
         {
             if (e.KeyCode == Keys.Left && !movingRight)
             {
-                this.orientation = "Left";
                 currentAnimation.lookLeft();
                 this.movingLeft = true;
             }
             if (e.KeyCode == Keys.Right && !movingLeft)
             {
-                this.orientation = "Right";
                 currentAnimation.lookRight();
                 this.movingRight = true; 
             }
@@ -168,7 +160,7 @@ namespace ProZad
                     }
                     else
                     {
-                        currentAnimation.Idle();
+                        currentAnimation.idle();
                     }
                 }
                 else

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,10 +15,10 @@ namespace ProZad
     {
         LevelManager lvlManager;
 
-        public Form1(MainMenu f2)
+        public Form1(MainMenu f2, int lvlKey)
         {
             InitializeComponent();
-            lvlManager = new LevelManager(f2, this, pbPlayer, label2, Controls.OfType<PictureBox>(), Controls.OfType<Timer>());
+            lvlManager = new LevelManager(f2, lvlKey,this, pbPlayer, label2, Controls.OfType<PictureBox>());
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)

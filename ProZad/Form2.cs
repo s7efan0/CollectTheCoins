@@ -14,10 +14,10 @@ namespace ProZad
     {
         LevelManager levelManager;
 
-        public Form2(MainMenu mm)
+        public Form2(MainMenu mm, int lvlKey)
         {
             InitializeComponent();
-            levelManager = new LevelManager(mm, this, pbPlayer, label1, Controls.OfType<PictureBox>(), Controls.OfType<Timer>());
+            levelManager = new LevelManager(mm, lvlKey,this, pbPlayer, label1, Controls.OfType<PictureBox>());
         }
 
         private void tGravity_Tick(object sender, EventArgs e)

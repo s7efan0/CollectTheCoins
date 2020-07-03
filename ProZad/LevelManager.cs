@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProZad
@@ -15,21 +11,19 @@ namespace ProZad
         CoinManager coinManager;
         MovingObstacles movingObstacles;
         StationaryObstacles stationaryObstacles;
-        bool gamePaused;
-        List<Timer> timers;
         MainMenu main;
         Form parent;
+        int lvlKey;
 
-        public LevelManager(MainMenu m, Form p,PictureBox pbPlayer, Label lbl, IEnumerable<PictureBox> pictureBoxes, IEnumerable<Timer> t)
+        public LevelManager(MainMenu m, int lvlkey,Form p,PictureBox pbPlayer, Label lbl, IEnumerable<PictureBox> pictureBoxes)
         {
             player = new Player(pbPlayer, pictureBoxes);
             coinManager = new CoinManager(pbPlayer, lbl, pictureBoxes);
             movingObstacles = new MovingObstacles(pbPlayer, pictureBoxes);
             stationaryObstacles = new StationaryObstacles(pbPlayer, pictureBoxes);
-            gamePaused = false;
-            timers = t.ToList();
             main = m;
             parent = p;
+            this.lvlKey = lvlkey;
         }
 
 
@@ -40,10 +34,9 @@ namespace ProZad
             {
                 reloadLevel();
             }
-            if (e.KeyCode == Keys.P)
+            if (e.KeyCode == Keys.Escape)
             {
-                gamePaused = !gamePaused;
-                pauseGame(gamePaused);
+                main.goBackToMainMenu(parent, false, lvlKey);
             }
         }
 
@@ -57,7 +50,7 @@ namespace ProZad
             }
             if (coinManager.allCoinsCollected())
             {
-                main.goBack(parent);
+                main.goBackToMainMenu(parent, true, lvlKey);
             }
         }
 
@@ -82,14 +75,6 @@ namespace ProZad
         {
             coinManager.resetCoins();
             player.reloadPlayer();
-        }
-
-        public void pauseGame(bool gp)
-        {
-            foreach(Timer t in timers)
-            {
-                t.Enabled = gp;
-            }
         }
     }
 }
