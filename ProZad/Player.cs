@@ -12,15 +12,16 @@ namespace ProZad
         private int force = 0;
         List<PictureBox> groundPictureBoxes;
 
-        public AnimationIdleRight animationIdleRight;
-        public AnimationRunRight animationRunRight;
-        public AnimationJumpDownRight animationJumpDownRight;
-        public AnimationJumpUpRight animationJumpUpRight;
+        public AnimationIdleRight animationIdleRight { get; set; }
+        public AnimationRunRight animationRunRight { get; set; }
+        public AnimationJumpDownRight animationJumpDownRight { get; set; }
+        public AnimationJumpUpRight animationJumpUpRight { get; set; }
 
-        public AnimationIdleLeft animationIdleLeft;
-        public AnimationRunLeft animationRunLeft;
-        public AnimationJumpDownLeft animationJumpDownLeft;
-        public AnimationJumpUpLeft animationJumpUpLeft;
+        public AnimationIdleLeft animationIdleLeft { get; set; }
+        public AnimationRunLeft animationRunLeft { get; set; }
+        public AnimationJumpDownLeft animationJumpDownLeft { get; set; }
+        public AnimationJumpUpLeft animationJumpUpLeft { get; set; }
+
         public IAnimator currentAnimation;
 
         int startLeft, startTop;

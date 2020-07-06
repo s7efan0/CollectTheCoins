@@ -100,7 +100,9 @@ namespace ProZad
                 try
                 {
                     IFormatter formatter = new BinaryFormatter();
-                    FileStream fileStream = new FileStream(openFileDialog.FileName, FileMode.Open, FileAccess.Read, FileShare.None);
+                    saveName = openFileDialog.FileName;
+                    FileStream fileStream = new FileStream(saveName, FileMode.Open, FileAccess.Read, FileShare.None);
+                    clearLevels();
                     levelCompldeted = (List<int>)formatter.Deserialize(fileStream);
                     fileStream.Close();
                     this.updateLevel();
@@ -114,6 +116,12 @@ namespace ProZad
         }
 
         private void button6_Click(object sender, EventArgs e)
+        {
+            clearLevels();
+            saveName = null;
+        }
+
+        private void clearLevels()
         {
             levelCompldeted.Clear();
             levelUnlock.Values.ToList().ForEach(btn => { if (btn != null) { btn.Enabled = false; } });
